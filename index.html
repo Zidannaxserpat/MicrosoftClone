@@ -1,3 +1,4 @@
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +42,44 @@
         <img src="MSWeb.png" alt="">
     </div>
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html> -->
 
@@ -231,7 +270,7 @@
 <div class="button">
     <a class="button-a" href="">
         <img style="height: 17px; width: 20px;" src="arrow-removebg-preview.png" alt="">
-        <a style="margin: 12px 0 0 -10px; text-decoration: none; color: black; font-weight: bold;" href="../MicrosoftClone/index.html">Kembali ke atas</a>
+        <a style="text-decoration: none;" href="#page-top">Kembali ke atas</a>
     </a>
 </div>
     
@@ -312,9 +351,11 @@
 <div class="bawah">
     <nav>
         <ul>
-            <li><a href="https://www.microsoft.com/id-id/locale"><img src="EarthLogo-removebg-preview.png" alt=""></a></li>
-            <li><a href="https://www.microsoft.com/id-id/locale">Indonesia (Indonesia)</a></li>    
-            <li><img style="cursor: pointer;" src="Radio.svg" alt=""></li>
+            <a href="">
+                <li><a href="https://www.microsoft.com/id-id/locale"><img src="EarthLogo-removebg-preview.png" alt=""></a></li>
+                <li><a href="https://www.microsoft.com/id-id/locale">Indonesia (Indonesia)</a></li>
+            </a>
+            <li><img src="Radio.svg" alt=""></li>
             <li><a href="">Pilihan Privasi Anda</a></li>
         </ul>
     </nav>
@@ -331,52 +372,29 @@
         </ul>
     </nav>
 </div>    
-</body>
-
-
-
-
-
-<!-- <div class="main-content">
-    <span style="color: white; text-shadow: 0 0 5px red;" class="open-button" onclick="openNav()">&#9776; Open</span>
-    <h1>Your Main Content Goes Here</h1>
-</div>
-
-
-
-
-<nav class="sidenav">
-    <div style="text-shadow: 0 0 10px red; float: right; position: sticky;" class="close-button" onclick="closeNav()">&times;</div>
-    <ul>
-        <li><img style="width: 100px; cursor: pointer;" src="MSLogo.svg.webp" alt=""></li>
-        <li><a href="">Microsoft 365</a></li>
-        <li><a href="">Teams</a></li>
-        <li><a href="">Xbox</a></li>
-        <li><a href="">Dukungan</a></li>
-        <div class="bawah">
-            <li><a href="">Semua Microsoft</a></li>
-            <li><img style="height: 30px; width: 25px;" src="search.svg" alt=""></li>
-            <li><img style="height: 30px; width: 25px;" src="https://i.pinimg.com/originals/15/bb/55/15bb559cdd28f56d7c17b00498b4a946.png" alt=""></li>
-        </div>
-    </ul>
-</nav>
-
-
-
-
-<script src="script.js"></script>
-
- -->
- 
-
- 
- 
- 
-
-
-
-
-
-
-
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	// if ('WebSocket' in window) {
+	// 	(function () {
+	// 		function refreshCSS() {
+	// 			var sheets = [].slice.call(document.getElementsByTagName("link"));
+	// 			var head = document.getElementsByTagName("head")[0];
+	// 			for (var i = 0; i < sheets.length; ++i) {
+	// 				var elem = sheets[i];
+	// 				var parent = elem.parentElement || head;
+	// 				parent.removeChild(elem);
+	// 				var rel = elem.rel;
+	// 				if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+	// 					var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+	// 					elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+	// 				}
+	// 				parent.appendChild(elem);
+	// 			}
+	// 		}
+	// 		var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+	// 		var address = protocol + window.location.host + window.location.pathname + '/ws';
+	// 		var socket = new WebSocket(address);
+	// 		socket.onmessage = function (msg) {
+	// 			if (msg.data == 'reload') window.location.reload();
+	// 			else if (msg)
