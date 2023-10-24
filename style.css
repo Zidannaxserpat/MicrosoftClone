@@ -1,0 +1,787 @@
+/* body {
+    padding: 0;
+    margin: 0;
+}
+
+.container nav  ul{
+    margin-left: 55px;
+    padding: 0;
+}
+   
+.container nav ul {display: flex;}
+   
+.container nav ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+   
+.container nav ul li a {
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+}
+   
+.container nav ul li a:hover {text-decoration: underline;}
+
+.container nav ul li img {
+    width: 100px;
+}
+   
+.kanan ul {
+    float: right;
+    margin-top: -30px;
+}
+   
+.kanan ul li img {margin-top: -8px;}
+
+.kanan ul {
+    padding-right: 20px;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+   
+.gambar1 {
+    justify-content: space-around;
+    display: flex;
+}
+   
+.gambar1 img {
+    width: 900px;
+}
+   
+.gambar1 h1 {
+    color: white;
+}
+   
+.content img {width: 100%}
+   
+.teks {
+    position: relative;
+    position: absolute;
+}
+   
+.aa {
+    position: relative;
+    position: absolute;
+} */
+
+
+.nav {
+    display: flex;
+}
+
+.sidenav {
+    position: relative;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+.nav ul li img {
+    margin-left: 28px;
+}
+
+.nav li a {
+    font-size: 12px;
+    color: #262626;
+    margin: 0;
+    text-decoration: none;
+    margin: 8px 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    padding: 1px 0;
+    backdrop-filter: blur(50px);
+    top: 0;
+    position: relative;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255); 
+}
+
+.navul li {
+    margin-left: px;
+}
+
+body {
+    /* margin: 40px 5px 100px 5px; */
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.kanan li img {
+    padding: 0;
+    margin-top: -8px;
+    filter: contrast();
+}
+
+.kanan {
+    margin-left: 400px;
+}
+
+.content img {
+    width: 100%;
+    height: 560px;
+}
+
+.teks {
+    margin: 150px 0 0 120px;
+    position: relative;
+    position: absolute;
+}
+
+.teks p {
+    line-height: 28px;
+}
+
+.aaa {
+    text-decoration: none;
+    color: white;
+    background-color: #0067b8;
+    border-radius: 2px;
+    padding: 11px 16px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aaa:hover {
+    background-color: rgb(0, 68, 255);
+}
+
+#a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    position: absolute;
+    cursor: pointer;
+    margin: 16px 0 0 23px;
+    font-weight: 700;
+}
+
+#a:hover {
+    text-decoration: underline;
+}
+
+.ID-a {
+    margin-left: 100px;
+    font-weight: bold;
+    padding-left: 100px;
+    transition: transform 0.3;
+}
+
+.ID-a:hover {
+    transform: translateX(10);
+}
+
+.Logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.Game img {
+    width: 50px;
+    height: 50px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Logo {
+    margin-top: 100px;
+}
+
+.text .b {
+    margin-left: 50px;
+}
+
+.bb {
+    margin-left: -10px;
+}
+
+.bbb {
+    margin-left: -40px;
+}
+
+.card {
+    padding: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texted a {
+    line-height: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.texted a:hover {
+    text-decoration: underline;
+}
+
+.card .V {
+    margin-left: 10px;
+}
+
+.card a {
+    font-weight: 700;
+}
+
+.konten {margin: 100px 0 0 45px;}
+
+.card img {cursor: pointer;}
+
+.konten .tertulis {
+    position: relative;
+    position: absolute;
+    margin: 200px 0 0 100px;
+}
+
+.tertulis .p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tertulis a {
+    border-radius: 2px;
+    line-height: 80px;
+    padding: 11px 16px;
+    background-color: rgb(0, 89, 255);
+    text-decoration: none;
+    color: white;
+}
+
+.tertulis a:hover {background-color: rgb(0, 60, 255);}
+
+.h1 {margin: 100px 0 0 43px;}
+
+h4 {color: #3a3a3a}
+
+.footer {
+    font-size: 12px;
+    background-color: #f2f2f2;
+    color: rgb(170, 170, 170);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.footer a {
+    margin-top: 15px;
+    color: #3a3a3a;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.footer1 {
+    margin-top: -50px;
+}
+
+.footer2 {
+    margin-top: -110px;
+}
+
+.footer4 {
+    margin-top: -1px;
+}
+
+.footer5 {
+    margin-top: -5px;
+}
+
+.footer6 {
+    margin-top: -65px;
+}
+
+.bawah nav ul {
+    display: flex;
+}
+
+.bawah nav ul li {
+    list-style: none;
+    margin: -30px 0 0 20px;
+}
+
+.bawah nav ul li a {
+    font-size: 12px;
+    color: #899498;
+    text-decoration: none;
+}
+
+.bawah nav ul li a:hover, .right a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.bawah nav ul li img {
+    width: 20px;
+    margin-top: 1px;
+}
+
+.right {
+    margin: -10px 0 0 20px;
+    display: flex;
+    margin: -20px 0 0 550px;
+}
+
+.right nav ul {
+    position: relative;
+    position: absolute;
+    display: flex;
+    margin-top: -30px;
+}
+
+.right nav ul li {
+    list-style: none;
+}
+
+.right nav ul li a {
+    color: #899498;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.right p {
+    color: #899498;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.button {
+    background-color: rgb(184, 184, 184);
+    display: flex;
+    margin-left: 1150px;
+    list-style: none;
+}
+
+.button .button-a {
+    padding: 12px 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.button .button-a a{
+    margin-top: 20px;
+}
+
+.button .button-a img {
+    margin-left: -15px;
+}
+/* .main .jumbotron .mainHeader {
+    margin-top: -10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 50px 0;
+}
+
+.main .jumbotron .mainHeader img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main .banner {
+    cursor: pointer;
+}
+
+.link {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.a {
+    margin-top: 40px;
+}
+
+.a a {
+    padding: 0 10px;
+    margin-top: 70px;
+    text-decoration: none;
+    color: rgb(0, 136, 247);
+}
+
+.aa {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.aa:hover {
+    text-decoration: none;
+}
+
+.a a:hover {
+    text-decoration: underline;
+}
+
+.image img {
+    transition: box-shadow 0.4s ease-in;
+    transition: transform 0.4s ease-out;
+}
+
+.image img:hover {
+    transform: rotateZ(360deg);
+    box-shadow: 0 0 20px 5px red;
+}
+
+
+.content {
+    justify-content: space-between;
+    display: flex;
+}
+
+.tulisan {
+    position: relative;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.container {
+    position: relative;
+    position: absolute;
+}
+
+.link {
+    margin: 0 0 0 500px;
+}
+
+.menulis {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    position: absolute;
+    margin-left:530px;
+}
+
+.iPhone img {
+    z-index: 1;
+    justify-content: center;
+    width: 1500px;
+}
+
+.footer div a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin-top: 30px;
+} */
+
+@media only screen and (max-width: 800px) {
+
+    html {
+        font-size: 17px;
+    }
+
+    #image {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainHeader {
+        margin-top: -70px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        margin-top: -50px;
+        z-index: -1;
+    }
+
+    .navbar ul li {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    .navbar ul li a {
+        z-index: -1;
+        color: black;
+    }
+
+    .sidenav {
+        margin: 0;
+        backdrop-filter: blur(100px);
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #00000033;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .sidenav ul {
+        z-index: 100;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .sidenav li {
+        padding: 20px;
+    }
+    
+    .sidenav ul li a {
+        padding: 8px 16;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        text-shadow: 0 0 5px lightgreen;
+    }
+
+    .sidenav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .sidenav ul li a img {
+        transition: transform 0.4s;
+        filter: brightness(100);
+    }
+
+    .sidenav ul li a img:hover {
+        filter: brightness(100);
+        transform: scale(1.2);
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .open-button {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        color: rgb(0, 0, 0);
+    }
+
+    .content {
+        display: inline;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .tulisan {
+        margin-left: 150px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tulisan h1 {
+        margin-left: -20px;
+    }
+
+    .menulis {
+        margin-left: 220px;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    .mainHeader .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    #image {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainHeader {
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        margin-top: -50px;
+        z-index: -1;
+    }
+
+    .navbar ul li {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    .navbar ul li a {
+        z-index: -1;
+        color: black;
+    }
+
+    .sidenav {
+        margin: 0;
+        backdrop-filter: blur(100px);
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #00000033;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .sidenav ul {
+        z-index: 100;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .sidenav li {
+        padding: 20px;
+    }
+    
+    .sidenav ul li a {
+        padding: 8px 16;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        text-shadow: 0 0 5px lightgreen;
+    }
+
+    .sidenav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .sidenav ul li a img {
+        transition: transform 0.4s;
+        filter: brightness(100);
+    }
+
+    .sidenav ul li a img:hover {
+        filter: brightness(100);
+        transform: scale(1.2);
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .open-button {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+        color: rgb(0, 0, 0);
+    }
+
+    .content {
+        display: inline;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .tulisan {
+        margin-left: 150px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tulisan h1 {
+        margin-left: -20px;
+    }
+
+    .menulis {
+        margin-left: 220px;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+/* .iPad .tulisan h1 {
+    margin-left: 70px;
+}
+
+.footer {
+    background-color: #4285f4;
+    color: white;
+    background: linear-gradient(135deg, black, grey);
+    background-size: 400%;
+    animation: gradient 10s infinite;
+}
+
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+  
+    50% {
+        background-position: 100% 50%;
+    }
+} */
