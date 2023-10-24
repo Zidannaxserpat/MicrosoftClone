@@ -278,7 +278,7 @@ body {
 
 .h1 {margin: 100px 0 0 43px;}
 
-h4 {color: #899498}
+h4 {color: #3a3a3a}
 
 .footer {
     font-size: 12px;
@@ -298,9 +298,14 @@ h4 {color: #899498}
     flex-direction: column;
 }
 
+.footer a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
 .footer a {
     margin-top: 15px;
-    color: #899498;
+    color: #3a3a3a;
     text-decoration: none;
     font-weight: 100;
 }
@@ -338,6 +343,11 @@ h4 {color: #899498}
     font-size: 12px;
     color: #899498;
     text-decoration: none;
+}
+
+.bawah nav ul li a:hover, .right a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .bawah nav ul li img {
