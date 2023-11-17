@@ -267,13 +267,49 @@
 
 
 
-<div class="button">
+<div class="button" id="scrollToTopContainer">
     <a class="button-a" href="">
         <img style="height: 17px; width: 20px;" src="arrow-removebg-preview.png" alt="">
-        <a style="color: black; margin: 12px 0 0 -10px; text-decoration: none;" href="../MicrosoftClone/index.html">Kembali ke atas</a>
+        <a onclick="ScrollToTop" id="scrollToTopBtn" style="color: black; margin: 12px 0 0 -10px; text-decoration: none;" href="../MicrosoftClone/index.html">Kembali ke atas</a>
     </a>
 </div>
-    
+<script>
+	window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var scrollToTopContainer = document.getElementById("scrollToTopContainer");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopContainer.style.display = "block";
+    } else {
+        scrollToTopContainer.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    var scrollStep = -window.scrollY / (200 / 10);
+
+    function animateScroll() {
+        window.scrollBy(0, scrollStep);
+
+        if (window.scrollY <= 0) {
+            scrollToTopContainer.style.display = "none";
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            return;
+        }
+
+        requestAnimationFrame(animateScroll);
+    }
+
+    animateScroll();
+}
+
+</script>
 
     
     
